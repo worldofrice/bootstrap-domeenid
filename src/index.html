@@ -8,119 +8,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-      .circle {
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      flex-shrink: 0;
-      border: 4px solid #1F5560;
-      display: grid;
-      align-items: center;
-    }
+      .numberCircle {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+
+        background: #fff;
+        border: 2px solid #666;
+        color: #666;
+        text-align: center;
+
+        font: 32px Arial, sans-serif;
+      }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="d-flex flex-grow-1 flex-column justify-content-center text-center mx-7 mt-5">
-      <div class="d-grid mx-5 px-3 py-3 gap-3 w-100 justify-content-center gap-auto">
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <div class="circle">
-                  <p class="align-middle my-0" style="color: var(--primary, #1F5560);
-                text-align: center;
-                font-family: Inter;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 600;">1</p>
-                </div>
-              </div>
-              <p class="col" style="color: var(--primary, #1F5560);
-              font-family: Inter;
-              text-align: left;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 600;"
-              >Otsi</p>
-              <p class="col" style="color: var(--primary, #1F5560);
-              font-family: Inter;
-              text-align: left;
-              font-size: 13px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;"
-              >Vali sobiv domeen</p>
-            </div>      
-          </div>
-          <div class="col">
-            <div class="circle">
-              <p class="align-middle my-0" style="color: var(--primary, #1F5560);
-              text-align: center;
-              font-family: Inter;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 600;">1</p>
-            </div>
-            <p style="color: var(--primary, #1F5560);
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;"
-            >Otsi</p>
-            <p style="color: var(--primary, #1F5560);
-            font-family: Inter;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;"
-            >Vali sobiv domeen</p>      
-          </div>
-          <div class="col">
-            <div class="circle">
-              <p class="align-middle my-0" style="color: var(--primary, #1F5560);
-              text-align: center;
-              font-family: Inter;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 600;">1</p>
-            </div>
-            <p style="color: var(--primary, #1F5560);
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;"
-            >Otsi</p>
-            <p style="color: var(--primary, #1F5560);
-            font-family: Inter;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;"
-            >Vali sobiv domeen</p>      
-          </div>
+    <div class="container mt-lg-5" style="max-width: 970px;">
+      <div class="row text-center">
+        <div class="col">
+          <h2> Otsi</h2>
+          <p>Vali sobivad domeenid</p>
+        </div>
+        <div class="col">
+          <h2>Kontaktandmed</h2>
+          <p>Sisesta kontaktandmed</p>
+        </div>
+        <div class="col">
+          <h2>Maksa</h2>
+          <p>Soorita makse</p>
         </div>
       </div>
-      <div class="w-100 mx-5 justify-content-center d-flex">
-        <div class="d-grid mx-2 my-3 w-100">
-          <form>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="domeeninimi" aria-label="domeeninimi">
-              </div>
-              <div class="col">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="col">
-                <button type="submit" class="btn btn-primary">OTSI</button>
-              </div>
-            </div>
-          </form>
+      <div class="input-group px-2 py-3">
+        <span class="input-group-text" id="basic-addon3">https://</span>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <select class="form-select" style="max-width: 125px;" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">.ee</option>
+          <option value="2">.eu</option>
+          <option value="3">.com</option>
+          <option value="4">.fi</option>
+        </select>
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Otsi</button>
+      </div>
+      <div class="row">
+
+        <div class="col-7 h-100">
+
+          <div class="row w-100">
+            <p class="col text-start">https://domeeninimi.ee</p>
+            <b class="col text-end">9.40€ + km</b>
+            <button type="button" class="col-md-auto btn btn-primary">Lisa korvi</button>
+          </div>
+
+        </div>
+
+        <div class="col-5 border border-3">
+          <h3>Tellimus</h3>
+          <div class="row w-100">
+            <p class="col text-start">https://domeeninimi.ee</p> 
+            <b class="col text-end">9.40€ + km</b>
+          </div>
+          <div class="row w-100">
+            <p class="col text-start">https://domeeninimi.ee</p> 
+            <b class="col text-end">9.40€ + km</b>
+          </div>
+          <div class="row w-100">
+            <p class="col text-start">https://domeeninimi.ee</p> 
+            <b class="col text-end">9.40€ + km</b>
+          </div>
+          <button type="button" class="btn btn-primary w-100 px-2 my-2">Jätka</button>
         </div>
       </div>
     </div>
