@@ -5,33 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Vite</title>
-  <script type="module" src="./js/main.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
-    .company-details {
-      display: none;
-    }
-  </style>
-  <script>
-    function toggleCompanyDetails() {
-      var checkBox = document.getElementById("companyCheck");
-      var companyDetails = document.getElementById("companyDetails");
-      if (checkBox.checked == true) {
-        companyDetails.classList.remove("d-none");
-        companyDetails.classList.add("d-block");
-      } else {
-        companyDetails.classList.remove("d-block");
-        companyDetails.classList.add("d-none");
-      }
-    }
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <div class="container mt-md-3" style="max-width: 970px;">
+  <div class="container mt-md-4" style="max-width: 970px;">
     <div class="row text-center">
       <div class="col-sm-4 d-none d-md-block">
         <h2>Otsi</h2>
@@ -71,9 +52,9 @@
             <div class="w-100"></div>
             <div class="mb-3 col-12">
               <label for="companyCheck" class="form-check-label">Company</label>
-              <input type="checkbox" class="form-check-input" id="companyCheck" onclick="toggleCompanyDetails()">
+              <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#companyDetails" aria-expanded="false" aria-controls="companyDetails">
             </div>
-            <div id="companyDetails" class="company-details row d-none w-100">
+            <div id="companyDetails" class="row collapse">
               <div class="mb-3 col-sm-6 col-12">
                 <label for="address1" class="form-label">Address 1</label>
                 <input type="text" class="form-control" id="address1" placeholder="Enter your address">
@@ -139,9 +120,12 @@
         <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle"></i></b>
       </div>
       <button type="button" class="btn btn-primary w-100 px-2 my-2">Jätka</button>
-      <a type="button" href="./index.html" class="btn btn-secondary w-100 px-2 my-2">Tagasi</a>
+      <a type="button" href="./index.html" class="btn btn-outline-secondary w-100 px-2 my-2">Tagasi</a>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script type="module" src="./js/main.js"></script>
 
 </body>
 
