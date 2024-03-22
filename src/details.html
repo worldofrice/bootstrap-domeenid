@@ -29,7 +29,7 @@
     </div>
     <div class="row">
       <div class="col-lg-7 col-sm-12  py-3">
-        <form>
+        <form id="details" method="post">
           <div class="row">
             <h2>Contact Details</h2>
             <div class="mb-3 col-sm-6 col-12">
@@ -54,25 +54,23 @@
               <label for="companyCheck" class="form-check-label">Company</label>
               <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#companyDetails" aria-expanded="false" aria-controls="companyDetails">
             </div>
-            <div id="companyDetails" class="row collapse">
-              <div class="mb-3 col-sm-6 col-12">
-                <label for="address1" class="form-label">Address 1</label>
-                <input type="text" class="form-control" id="address1" placeholder="Enter your address">
+            <div id="companyDetails" class="col-12 collapse">
+              <div class="row">
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="companyname" class="form-label">Company Name</label>
+                  <input type="text" class="form-control" id="companyname" placeholder="Enter your company name">
+                </div>
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="companyid" class="form-label">Company Identification Number</label>
+                  <input type="number" class="form-control" id="companyid" placeholder="Enter your company identification number">
+                </div>
+                <div class="w-100"></div>
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="vatid" class="form-label">VAT Identification Number</label>
+                  <input type="number" class="form-control" id="vatid" placeholder="Enter your VAT identification number">
+                </div>
+                <div class="w-100"></div>
               </div>
-              <div class="mb-3 col-sm-6 col-12">
-                <label for="address1" class="form-label">Address 1</label>
-                <input type="text" class="form-control" id="address1" placeholder="Enter your address">
-              </div>
-              <div class="w-100"></div>
-              <div class="mb-3 col-sm-6 col-12">
-                <label for="address1" class="form-label">Address 1</label>
-                <input type="text" class="form-control" id="address1" placeholder="Enter your address">
-              </div>
-              <div class="mb-3 col-sm-6 col-12">
-                <label for="address1" class="form-label">Address 1</label>
-                <input type="text" class="form-control" id="address1" placeholder="Enter your address">
-              </div>
-              <div class="w-100"></div>
             </div>
             <h2>Billing Address</h2>
             <div class="mb-3 col-sm-6 col-12">
@@ -95,13 +93,14 @@
             <div class="w-100"></div>
             <div class="mb-3 col-sm-6 col-12">
               <label for="postIndex" class="form-label">Post Index</label>
-              <input type="text" class="form-control" id="postIndex" placeholder="Enter your post index">
+              <input type="number" class="form-control" id="postIndex" placeholder="Enter your post index">
             </div>
             <div class="mb-3 col-sm-6 col-12">
               <label for="country" class="form-label">Country</label>
               <input type="text" class="form-control" id="country" placeholder="Enter your country">
             </div>
             <div class="w-100"></div>
+            <button type="submit" class="btn btn-primary">JAJAJAJA</button>
         </form>
       </div>
     </div>
@@ -119,7 +118,8 @@
         <p class="col-7 text-start">https://domeeninimi.ee</p>
         <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle"></i></b>
       </div>
-      <button type="button" class="btn btn-primary w-100 px-2 my-2">Jätka</button>
+      <!-- onclick="!this.form && document.getElementById('details').submit()" -->
+      <button type="submit" form="details" class="btn btn-primary w-100 px-2 my-2">Jätka</button>
       <a type="button" href="./index.html" class="btn btn-outline-secondary w-100 px-2 my-2">Tagasi</a>
     </div>
   </div>
