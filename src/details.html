@@ -23,8 +23,8 @@
         <p>Sisesta kontaktandmed</p>
       </div>
       <div class="col-sm-4 d-none d-md-block">
-        <h2>Maksa</h2>
-        <p>Soorita makse</p>
+        <h2>Valmis</h2>
+        <p>Tellimus edastatakse</p>
       </div>
     </div>
     <div class="row">
@@ -33,7 +33,7 @@
           <div class="row">
             <h2>Contact Details</h2>
             <div class="mb-3 col-sm-6 col-12">
-              <label for="name" class="form-label">Name</label>
+              <label for="firstName" class="form-label">First Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter your name">
             </div>
             <div class="mb-3 col-sm-6 col-12">
@@ -52,7 +52,7 @@
             <div class="w-100"></div>
             <div class="mb-3 col-12">
               <label for="companyCheck" class="form-check-label">Company</label>
-              <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#companyDetails" aria-expanded="false" aria-controls="companyDetails">
+              <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#companyDetails" aria-expanded="false" aria-controls="companyDetails" autocomplete="off">
             </div>
             <div id="companyDetails" class="col-12 collapse">
               <div class="row">
@@ -100,7 +100,6 @@
               <input type="text" class="form-control" id="country" placeholder="Enter your country">
             </div>
             <div class="w-100"></div>
-            <button type="submit" class="btn btn-primary">JAJAJAJA</button>
         </form>
       </div>
     </div>
@@ -108,18 +107,18 @@
       <h2>Tellimus</h2>
       <div class="row px-1">
         <p class="col-7 text-start">https://domeeninimi.ee</p>
-        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle"></i></b>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
       </div>
       <div class="row px-1">
         <p class="col-7 text-start">https://domeeninimi.ee</p>
-        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle"></i></b>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
       </div>
       <div class="row px-1">
         <p class="col-7 text-start">https://domeeninimi.ee</p>
-        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle"></i></b>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
       </div>
       <!-- onclick="!this.form && document.getElementById('details').submit()" -->
-      <button type="submit" form="details" class="btn btn-primary w-100 px-2 my-2">Jätka</button>
+      <a type="submit" href="./success.html" class="btn btn-primary w-100 px-2 my-2">Jätka</a>
       <a type="button" href="./index.html" class="btn btn-outline-secondary w-100 px-2 my-2">Tagasi</a>
     </div>
   </div>
