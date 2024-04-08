@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-md-4" style="max-width: 970px;">
+    <div class="row text-center">
+      <div class="col-sm-4 d-none d-md-block">
+        <h2>Otsi</h2>
+        <p>Vali sobivad domeenid</p>
+      </div>
+      <div class="col-sm-4 d-none d-md-block">
+        <h2>Kontaktandmed</h2>
+        <p>Sisesta kontaktandmed</p>
+      </div>
+      <div class="col-sm-4 d-none d-md-block">
+        <h2>Valmis</h2>
+        <p>Tellimus edastatakse</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 col-sm-12  py-3">
+        <form id="details" method="post">
+          <div class="row">
+            <h2>Contact Details</h2>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+            </div>
+            <div class="w-100"></div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="w-100"></div>
+            <div class="mb-3 col-12">
+              <label for="companyCheck" class="form-check-label">Company</label>
+              <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#companyDetails" aria-expanded="false" aria-controls="companyDetails" autocomplete="off">
+            </div>
+            <div id="companyDetails" class="col-12 collapse">
+              <div class="row">
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="companyname" class="form-label">Company Name</label>
+                  <input type="text" class="form-control" id="companyname" placeholder="Enter your company name">
+                </div>
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="companyid" class="form-label">Company Identification Number</label>
+                  <input type="number" class="form-control" id="companyid" placeholder="Enter your company identification number">
+                </div>
+                <div class="w-100"></div>
+                <div class="mb-3 col-sm-6 col-12">
+                  <label for="vatid" class="form-label">VAT Identification Number</label>
+                  <input type="number" class="form-control" id="vatid" placeholder="Enter your VAT identification number">
+                </div>
+                <div class="w-100"></div>
+              </div>
+            </div>
+            <h2>Billing Address</h2>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="address1" class="form-label">Address 1</label>
+              <input type="text" class="form-control" id="address1" placeholder="Enter your address">
+            </div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="address2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="address2" placeholder="Enter your address">
+            </div>
+            <div class="w-100"></div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" placeholder="Enter your city">
+            </div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="state" class="form-label">State</label>
+              <input type="text" class="form-control" id="state" placeholder="Enter your state">
+            </div>
+            <div class="w-100"></div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="postIndex" class="form-label">Post Index</label>
+              <input type="number" class="form-control" id="postIndex" placeholder="Enter your post index">
+            </div>
+            <div class="mb-3 col-sm-6 col-12">
+              <label for="country" class="form-label">Country</label>
+              <input type="text" class="form-control" id="country" placeholder="Enter your country">
+            </div>
+            <div class="w-100"></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-5 col-sm-12 py-3">
+      <h2>Tellimus</h2>
+      <div class="row px-1">
+        <p class="col-7 text-start">https://domeeninimi.ee</p>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
+      </div>
+      <div class="row px-1">
+        <p class="col-7 text-start">https://domeeninimi.ee</p>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
+      </div>
+      <div class="row px-1">
+        <p class="col-7 text-start">https://domeeninimi.ee</p>
+        <b class="col-5 text-end">9.40€ + km <i class="bi bi-x-circle text-danger"></i></b>
+      </div>
+      <!-- onclick="!this.form && document.getElementById('details').submit()" -->
+      <a type="submit" href="./success.html" class="btn btn-primary w-100 px-2 my-2">Jätka</a>
+      <a type="button" href="./index.html" class="btn btn-outline-secondary w-100 px-2 my-2">Tagasi</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
